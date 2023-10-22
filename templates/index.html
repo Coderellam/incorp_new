@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="{% static 'style.css' %}" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+		<title>iNCORP</title>
+	</head>
+	<body>
+		<div class="preloader">
+			<div class="spinner"></div>
+	</div>
+		<header>
+			<div class="header-wrapper">
+				<div class="container">
+					<div class="header__wrap">
+						<div class="logo">
+							<a href="#">
+								<img src="{% static 'images/logo.svg' %}" alt="logo" />
+							</a>
+						</div>
+						<div class="menu">
+							<ul>
+								<li><a id="go_one_section_id" href="#">О компании</a></li>
+								<li><a id="go_nashi_uslugi" href="#">Услуги</a></li>
+								<li><a id="go_portfolio" href="#">Портфолио</a></li>
+								<li><a id="go_section_grid_id" href="#">Наши преимущества</a></li>
+								<li><a id="go_contacts" href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="phone-number">
+							<a href="tel:998-90-900-00-09">+998 90 900 00 09</a>
+							<a href="tel:998-90-000-00-09">+998 90 000 00 09</a>
+						</div>
+						<!-- Меню бургера -->
+						<div class="burger-menu">
+							<div class="menu-icon">
+								<div class="bar"></div>
+								<div class="bar"></div>
+								<div class="bar"></div>
+							</div>
+							<div class="close-icon">
+								<div class="close-bar"></div>
+								<div class="close-bar"></div>
+							</div>
+							<ul class="mobile-menu">
+								<li><a id="go_one_section_id" href="#">О компании</a></li>
+								<li><a id="go_nashi_uslugi" href="#">Услуги</a></li>
+								<li><a id="go_portfolio" href="#">Портфолио</a></li>
+								<li><a id="go_section_grid_id" href="#">Клиенты</a></li>
+								<li><a id="go_contacts" href="#">Контакты</a></li>
+							</ul>
+						</div>
+						<!-- Конец меню бургера -->
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		
+
+		<div class="container">
+			<section class="zero-section">
+				<div class="zero-section__wrap">
+					<div
+						class="left-section"
+						data-aos="zoom-in"
+						data-aos-offset="200"
+						data-aos-delay="50"
+						data-aos-duration="700"
+						data-aos-easing="ease-in-out"
+					>
+						<div class="left-section__wrap">
+							<h1>
+								Быстрые, гибкие команды
+								<span
+									><img src="{% static 'images/faces.png' %}" alt="faces" /> ведущего
+									агентства</span
+								>
+								разработки ПО
+							</h1>
+							<p>
+								Incorp - лидер в разработке мобильных приложений, <br />
+								веб-сайтов и ПО для управления бизнесом и не только
+							</p>
+							<img src="{% static 'images/line.svg' %}" alt="line" />
+							<div class="left-section-buttons">
+								<button>
+									<a id="go_to_contacts" href="#"
+										>Работать с нами 
+										<div class="arrow-right-hover"></div>
+										<!-- <img src="images/rarrow.svg" alt=""/> -->
+								</a>
+								</button>
+								<button><a id="go_to_portfolio" href="#">Посмотреть портфолио</a></button>
+							</div>
+						</div>
+					</div>
+					<div
+						class="right-section"
+						data-aos="zoom-in"
+						data-aos-offset="200"
+						data-aos-delay="50"
+						data-aos-duration="700"
+						data-aos-easing="ease-in-out"
+					>
+						<div class="phone-image" id="phone-image"></div>
+					</div>
+				</div>
+				<div class="sub-menu">
+					<div class="sub-menu-wrap">
+						<ul id="menu_id">
+							
+							<li><a href="#" data-image="image6.jpg">
+								<div class="android-img"></div>
+								<div class="ios-img"></div>
+								<!-- <img src="images/Android.png" alt="">
+								<img src="images/IOS.png" alt=""> -->
+								Разработка мобильных приложений</a>
+							</li>
+							
+							<li><a href="#" data-image="image5.jpg">
+								<div class="ii-img"></div>
+								<!-- <img src="images/ii.png" alt=""> -->
+								Интеграция ИИ</a>
+							</li>
+
+							<li>
+								<a href="#" data-image="image1.jpg">
+									<div class="trategy-img"></div>
+									<!-- <img src="images/trategy.png" alt=""> -->
+									Разработка ПО на заказ</a>
+							</li>
+
+							<!-- <li><a href="#" data-image="image3.jpg">
+								<img src="images/mobile.png" alt="">Разработка мобильных приложений</a>
+							</li> -->
+
+							<li>
+								<a href="#" data-image="image2.jpg">
+									<div class="testing-img"></div>
+									<!-- <img src="images/testing.png" alt=""> -->
+									Веб разработка</a>
+							</li>
+							
+
+
+							<li class="ux-item"><a href="#" data-image="image4.jpg">
+							 <div class="ux-img"></div>
+								<!-- <img src="images/ux.png" alt=""> -->
+							 	UX/UI-дизайн</a>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</section>
+</div>
+			<section class="big-logo-section">
+				<div class="big-logo-section-wrap">
+					<div id="big-el-cover">
+						<img
+							class="big-box"
+							src="{% static 'images/bigLogo.svg' %}"
+							alt=""
+							data-aos="zoom-in"
+							data-aos-offset="200"
+							data-aos-delay="50"
+							data-aos-duration="2000"
+							data-aos-easing="ease-in-out"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<div class="container">
+			<section id="one_section_id" class="one-section">
+				<div class="one-section__wrap">
+					<div>
+						<div
+							class="one-section-left"
+							data-aos="zoom-in"
+							data-aos-offset="200"
+							data-aos-delay="50"
+							data-aos-duration="700"
+							data-aos-easing="ease-in-out"
+						>
+							<div class="one-section-left-top">
+								<img src="{% static 'images/01.svg' %}" alt="" />
+								<img src="{% static 'images/01iNCORP.svg' %}" alt="" />
+							</div>
+							<div class="one-section-left-img">
+								<img src="{% static 'images/01img.png' %}" alt="" />
+							</div>
+						</div>
+					</div>
+					<div
+						class="one-section-right"
+						data-aos="zoom-in"
+						data-aos-offset="200"
+						data-aos-delay="50"
+						data-aos-duration="700"
+						data-aos-easing="ease-in-out"
+					>
+						<ul id="cards">
+							<li class="card" id="card1">
+								<div class="card-body">
+									<div class="one-section-right-item">
+										<img src="{% static 'images/01item.svg' %}" alt="" />
+										<h2>Инновационные разработки для вашего успеха</h2>
+										<p>
+											Инновационные разработки для вашего успеха. Мы создаем
+											высококачественные мобильные приложения, веб-сайты и
+											программное обеспечение, которые помогут вашему бизнесу
+											преуспеть. Доверьтесь нашей команде экспертов и воплотите
+											свои идеи в реальность. Обретите цифровое превосходство и
+											достигните новых высот в вашей индустрии.
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="card" id="card2">
+								<div class="card-body">
+									<div class="one-section-right-item">
+										<img src="{% static 'images/02item.svg' %}" alt="" />
+										<h2>Инновационные разработки для вашего успеха</h2>
+										<p>
+											Инновационные разработки для вашего успеха. Мы создаем
+											высококачественные мобильные приложения, веб-сайты и
+											программное обеспечение, которые помогут вашему бизнесу
+											преуспеть. Доверьтесь нашей команде экспертов и воплотите
+											свои идеи в реальность. Обретите цифровое превосходство и
+											достигните новых высот в вашей индустрии.
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="card" id="card3" >
+								<div class="card-body">
+									<div class="one-section-right-item">
+										<img src="{% static 'images/02item.svg' %}" alt="" />
+										<h2>Инновационные разработки для вашего успеха</h2>
+										<p>
+											Инновационные разработки для вашего успеха. Мы создаем
+											высококачественные мобильные приложения, веб-сайты и
+											программное обеспечение, которые помогут вашему бизнесу
+											преуспеть. Доверьтесь нашей команде экспертов и воплотите
+											свои идеи в реальность. Обретите цифровое превосходство и
+											достигните новых высот в вашей индустрии.
+										</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		</div>
+
+
+		<!-- <div style="height: 50vh;" class="section black-animation" data-bg="#f2f2f4"></div>
+		<div style="height: 50vh;" class="section black-animation" data-bg="#000014"></div> -->
+
+		<section id="nashi_uslugi" class="two-section">
+			<div class="container">
+				<div class="two-section__wrap">
+					<div
+						class="two-section-left"
+						data-aos="zoom-in"
+						data-aos-offset="200"
+						data-aos-delay="50"
+						data-aos-duration="700"
+						data-aos-easing="ease-in-out"
+					>
+						<img src="{% static 'images/two02.svg' %}" alt="" />
+						<img src="{% static 'images/twotext.svg' %}" alt="" />
+					</div>
+					<div
+						class="two-section-right"
+						data-aos="zoom-in"
+						data-aos-offset="200"
+						data-aos-delay="50"
+						data-aos-duration="700"
+						data-aos-easing="ease-in-out"
+					>
+						<div class="two-section-right-top">
+							<div class="two-section-right-top-text">
+								<div class="two-section-right-top-text-heading">
+									<img src="{% static 'images/itemtwo1.svg' %}" alt="" />
+									<h3>Веб-разработка</h3>
+								</div>
+								<p>
+									Мы предлагаем комплексный подход к веб-разработке, включающий
+									в себя анализ рынка и конкурентов, разработку эффективной
+									информационной архитектуры и интеграцию мощных функций!
+								</p>
+								<div class="two-section-right-top-text__button">
+									<button>
+										<a href="#contacts"
+											>Получить услугу 
+											<div class="arrow-right-hover"></div>
+											<!-- <img src="images/webarr.svg" alt=""/> -->
+									</a>
+									</button>
+								</div>
+							</div>
+							<div class="two-section-right-top-img" data-depth="0.2">
+								<div id="parallax-container" class="parallax-layer-style">
+									<img
+										class="parallax-layer "
+										src="{% static 'images/Vector.png' %}"
+										alt=""
+										data-depth="0.6"
+									/>
+								</div>
+							</div>
+						</div>
+						<div
+							class="two-section-right-bottom"
+							data-aos="zoom-in"
+							data-aos-offset="200"
+							data-aos-delay="50"
+							data-aos-duration="700"
+							data-aos-easing="ease-in-out"
+						>
+							<div class="two-section-right-bottom-wrap">
+								<div class="two-section-right-bottom-l">
+									<div class="two-section-right-bottom-l-heading">
+										<img src="{% static 'images/sec2phone.png' %}" alt="" />
+										<h3>Мобильная разработка</h3>
+									</div>
+									<p>
+										Мы предлагаем полный спектр услуг по мобильной разработке,
+										включая разработку приложений для iOS и Android, дизайн
+										пользовательского интерфейса, тестированией!
+									</p>
+									<div class="two-section-right-bottom__button">
+										<button>
+											<a href="#"
+												>Получить услугу 
+												<div class="arrow-right-hover"></div>
+												<!-- <img src="images/whitearr.svg" alt=""/> -->
+										</a>
+										</button>
+									</div>
+								</div>
+								<div
+									class="two-section-right-bottom-r"
+									data-aos="zoom-in"
+									data-aos-offset="200"
+									data-aos-delay="50"
+									data-aos-duration="700"
+									data-aos-easing="ease-in-out"
+								>
+									<div class="two-section-right-bottom-l-heading">
+										<img src="{% static 'images/sec2pencil.png' %}" alt="" />
+										<h3>UX/UI-дизайн</h3>
+									</div>
+									<p>
+										Наша команда опытных дизайнеров UX/UI создаст для вас
+										пользовательский опыт, который не только привлечет внимание
+										вашей аудитории, но и обеспечит высокую конверсию и
+										лояльность пользователей.
+									</p>
+									<div class="two-section-right-bottom__button">
+										<button>
+											<a href="#"
+												>Получить услугу 
+												<div class="arrow-right-hover"></div>
+												<!-- <img src="images/whitearr.svg" alt=""/> -->
+										</a>
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="two-section-right-bottom-more">
+								<button>
+									<a href="#">Показать ещё</a>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- <div style="height: 50vh;" class="section black-animation" data-bg="#000014"></div>
+		<div style="height: 50vh;" class="section black-animation" data-bg="#f2f2f4"></div> -->
+
+
+
+		<section id="portfolio" class="section-portfolio">
+			<div class="section-portfolio-wrap">
+                {% for portf in portfolios %}
+				<img data-aos="zoom-in"
+				data-aos-offset="200"
+				data-aos-delay="50"
+				data-aos-duration="700"
+				data-aos-easing="ease-in-out" class="section-portfolio-001" src="{{ portf.image.url }}" alt="">
+                {% endfor %}
+{#				<img data-aos="zoom-in"#}
+{#				data-aos-offset="200"#}
+{#				data-aos-delay="50"#}
+{#				data-aos-duration="700"#}
+{#				data-aos-easing="ease-in-out" class="section-portfolio-002" src="{% static 'images/002.jpg' %}" alt="">#}
+				<div class="section-portfolio__btn">
+					<button><a href="#">Портфолио</a></button>
+			</div>
+{#			<img data-aos="zoom-in"#}
+{#			data-aos-offset="200"#}
+{#			data-aos-delay="50"#}
+{#			data-aos-duration="700"#}
+{#			data-aos-easing="ease-in-out" class="section-portfolio-003" src="{% static 'images/003.jpg' %}" alt="">#}
+{#				<img data-aos="zoom-in"#}
+{#				data-aos-offset="200"#}
+{#				data-aos-delay="50"#}
+{#				data-aos-duration="700"#}
+{#				data-aos-easing="ease-in-out" class="section-portfolio-004" src="{% static 'images/004.webp' %}" alt="">#}
+{#				</div>#}
+		</section>
+
+		<section class="stategy-block">
+			<div class="container">
+				<div
+					class="stategy-block-wrap"
+				>
+					<img class="stategy-block-img" src="{% static 'images/strategy.png' %}" alt="" />
+				</div>
+			</div>
+		</section>
+
+		<section id="section_grid_id" class="section-grid">
+			<div class="container">
+				<div class="section-grid-wrap">
+					<div
+						class="section-grid-heading"
+						data-aos="zoom-in"
+						data-aos-offset="200"
+						data-aos-delay="50"
+						data-aos-duration="700"
+						data-aos-easing="ease-in-out"
+					>
+						<h2>
+							Почему мы - <br />
+							идеальный выбор для <br />
+							сотрудничества
+						</h2>
+					</div>
+					<div class="section-grid-table-masonry">
+						<div
+							class="item-1"
+							data-aos="zoom-in"
+							data-aos-offset="200"
+							data-aos-delay="50"
+							data-aos-duration="700"
+							data-aos-easing="ease-in-out"
+						>
+							<div class="item-1-inner">
+								<div class="item-1-inner-heading">
+									<h4>Экспертиза и опыт</h4>
+									<img src="{% static 'images/inner-01.svg' %}" alt="" />
+								</div>
+								<div class="item-1-inner-body">
+									<p>
+										Наша команда обладает широкой экспертизой и многолетним
+										опытом в разработке IT-продуктов, что позволяет нам
+										эффективно решать сложные задачи и достигать впечатляющих
+										результатов.
+									</p>
+								</div>
+								<div class="item-1-inner-footer">
+									<div class="item-1-inner-footer-wrap">
+										<button>
+											<a href="#contacts"
+												>Работать с нами
+												<div class="inner-btn-arr"></div
+											></a>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="item-2"
+							data-aos="zoom-in"
+							data-aos-offset="200"
+							data-aos-delay="50"
+							data-aos-duration="700"
+							data-aos-easing="ease-in-out"
+						>
+							<div class="item-1-inner">
+								<div class="item-1-inner-heading">
+									<h4>Инновационный подход</h4>
+									<img src="{% static 'images/inner-02.svg' %}" alt="" />
+								</div>
+								<div class="item-1-inner-body">
+									<p>
+										Постоянно следим за последними технологическими трендами и
+										применяем инновационные решения, чтобы помочь вам оставаться
+										впереди конкурентов и преуспевать в быстро меняющемся рынке.
+									</p>
+								</div>
+								<div class="item-1-inner-footer">
+									<div class="item-1-inner-footer-wrap">
+										<button>
+											<a href="#contacts"
+												>Работать с нами
+												<div class="inner-btn-arr"></div
+											></a>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="item-3"
+							data-aos="zoom-in"
+							data-aos-offset="200"
+							data-aos-delay="50"
+							data-aos-duration="700"
+							data-aos-easing="ease-in-out"
+						>
+							<div class="item-1-inner">
+								<div class="item-1-inner-heading">
+									<h4>Экспертиза и опыт</h4>
+									<img src="{% static 'images/inner-03.svg' %}" alt="" />
+								</div>
+								<div class="item-1-inner-body">
+									<p>
+										Наша команда обладает широкой экспертизой и многолетним
+										опытом в разработке IT-продуктов, что позволяет нам
+										эффективно решать сложные задачи и достигать впечатляющих
+										результатов.
+									</p>
+								</div>
+								<div class="item-1-inner-footer">
+									<div class="item-1-inner-footer-wrap">
+										<button>
+											<a href="#contacts"
+												>Работать с нами
+												<div class="inner-btn-arr"></div
+											></a>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="item-4"
+							data-aos="zoom-in"
+							data-aos-offset="200"
+							data-aos-delay="50"
+							data-aos-duration="700"
+							data-aos-easing="ease-in-out"
+						>
+							<div class="item-1-inner">
+								<div class="item-1-inner-heading">
+									<h4>Индивидуальное внимание</h4>
+									<img src="{% static 'images/inner-04.svg' %}" alt="" />
+								</div>
+								<div class="item-1-inner-body">
+									<p>
+										Ценим каждого клиента и придаем важность пониманию их
+										уникальных потребностей. Наш индивидуальный подход позволяет
+										нам разработать решения, точно соответствующие вашим
+										требованиям и целям.
+									</p>
+								</div>
+								<div class="item-1-inner-footer">
+									<div class="item-1-inner-footer-wrap">
+										<button>
+											<a href="#contacts"
+												>Работать с нами
+												<div class="inner-btn-arr"></div
+											></a>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="item-5"
+							data-aos="zoom-in"
+							data-aos-offset="200"
+							data-aos-delay="50"
+							data-aos-duration="700"
+							data-aos-easing="ease-in-out"
+						>
+							<div class="item-1-inner">
+								<div class="item-1-inner-heading">
+									<h4>Техническая экспертиза и поддержка</h4>
+									<img src="{% static 'images/inner-05.svg' %}" alt="" />
+								</div>
+								<div class="item-1-inner-body">
+									<p>
+										Наша команда предлагает полный спектр технической поддержки,
+										обеспечивая вам комфорт и уверенность в работе с нами. Мы
+										всегда готовы помочь и решить любые возникающие вопросы.
+									</p>
+								</div>
+								<div class="item-1-inner-footer">
+									<div class="item-1-inner-footer-wrap">
+										<button>
+											<a href="#contacts"
+												>Работать с нами
+												<div class="inner-btn-arr"></div
+											></a>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="item-6"
+							data-aos="zoom-in"
+							data-aos-offset="200"
+							data-aos-delay="50"
+							data-aos-duration="700"
+							data-aos-easing="ease-in-out"
+						>
+							<div class="item-1-inner">
+								<div class="item-1-inner-heading">
+									<h4>Гибкость и прозрачность</h4>
+									<img src="{% static 'images/inner-06.svg' %}" alt="" />
+								</div>
+								<div class="item-1-inner-body">
+									<p>
+										Ценим ваше время и бизнес-потребности. Поэтому мы предлагаем
+										гибкие условия сотрудничества и прозрачную коммуникацию,
+										чтобы обеспечить максимальное удовлетворение и успешные
+										результаты вашего проекта.
+									</p>
+								</div>
+								<div class="item-1-inner-footer">
+									<div class="item-1-inner-footer-wrap">
+										<button>
+											<a href="#contacts"
+												>Работать с нами
+												<div class="inner-btn-arr"></div
+											></a>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="contacts" style="visibility: hidden;"></div>
+		</section>
+
+		<section  class="section-form">
+			<div class="container">
+				<div class="section-form-wrap">
+					<div
+						class="section-form-left-block"
+						data-aos="zoom-in"
+						data-aos-offset="200"
+						data-aos-delay="50"
+						data-aos-duration="700"
+						data-aos-easing="ease-in-out"
+					>
+						<div class="section-form-left-block-headding">
+							<h3>Контактная информация</h3>
+							<span>Остались вопросы? Свяжитесь с нами</span>
+						</div>
+						<div class="section-form-left-block-contact">
+							<ul>
+								<li>
+									<a href=""
+										><img src="{% static 'images/phone-call.svg' %}" alt="" />+1012 3456 789</a
+									>
+								</li>
+								<li>
+									<a href=""
+										><img src="{% static 'images/email.svg' %}" alt="" /> support@incorp.com</a
+									>
+								</li>
+								<li>
+									<a href=""
+										><img src="{% static 'images/location.svg' %}" alt="" />132 Dartmouth
+										Street Boston, <br />
+										Massachusetts 02156 United States</a
+									>
+								</li>
+							</ul>
+						</div>
+						<div class="section-form-left-block-footer">
+							<div class="section-form-icons">
+								<div class="section-form-icons-item">
+									<a href="#"><img src="{% static 'images/twitter.svg' %}" alt="" /></a>
+								</div>
+								<div class="section-form-icons-item">
+									<a href="#"><img src="{% static 'images/instagram.svg' %}" alt="" /></a>
+								</div>
+								<div class="section-form-icons-item">
+									<a href="#"><img src="{% static 'images/drubble.svg' %}" alt="" /></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="section-form-right-form"
+						data-aos="zoom-in"
+						data-aos-offset="200"
+						data-aos-delay="50"
+						data-aos-duration="700"
+						data-aos-easing="ease-in-out"
+					>
+						<form action="" method="post">
+                            {% csrf_token %}
+							<div class="first-section-form">
+								<div class="form-name">
+									<label for="name">Имя</label>
+									<input type="text" name="name" id="name"  />
+								</div>
+								<div class="form-surname">
+									<label for="surname">Фамилия</label>
+									<input type="text" name="surname" id="surname"  />
+								</div>
+								<div class="form-email">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email"/>
+								</div>
+								<div class="form-phone-number">
+									<label for="phone-number">Номер телефона</label>
+									<input type="text" name="number" id="phone-number" />
+								</div>
+							</div>
+
+
+
+
+							<div class="choose-service">
+								<div class="choose-service-heading">
+										<h3>Выберите услугу</h3>
+								</div>
+								<div class="choose-service-wrap">
+										<div class="choose-service-item">
+												<input type="checkbox" id="web-development" name="service" />
+												<label for="web-development">Веб разработка</label>
+										</div>
+										<div class="choose-service-item">
+												<input type="checkbox" id="ux-ui" name="service" />
+												<label for="ux-ui">UX/UI</label>
+										</div>
+										<div class="choose-service-item">
+												<input type="checkbox" id="mobile-development" name="service" />
+												<label for="mobile-development">Мобильная разработка</label>
+										</div>
+										<div class="choose-service-item">
+												<input type="checkbox" id="internet-platform" name="service" />
+												<label for="internet-platform">Интернет платформа</label>
+										</div>
+								</div>
+						</div>
+
+
+							<div class="form-message">
+								<label for="message">Сообшение</label>
+								<textarea
+									name="message"
+									id="message"
+									placeholder="Напишите ваше сообщение"
+								></textarea>
+							</div>
+
+							<div class="form-footer">
+								<button type="submit"><a href="#">Отправить</a></button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-wrap">
+				<div class="footer-items">
+					<a href="#"><img src="{% static 'images/footer-logo.svg' %}" alt="" /></a>
+				</div>
+				<div class="footer-items">
+					<ul>
+						<li>
+							<a href="#"
+								>5123 Market St. #22B <br />
+								Charlottesville, California 44635</a
+							>
+						</li>
+						<div class="footer-items-cover">
+							<li><a href="#">(434) 546-4356</a></li>
+							<li><a href="#">contact@incorp.com</a></li>
+						</div>
+					</ul>
+				</div>
+				<div class="footer-items">
+					<ul>
+						<li><a href="">Быстрые ссылки</a></li>
+						<li><a href="">О компании</a></li>
+						<li><a href="">Услуги</a></li>
+						<li><a href="">Портфолио</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer-items">
+					<ul>
+						<li><a href="">Find us on</a></li>
+						<li><a href="">Facebook</a></li>
+						<li><a href="">Instagram</a></li>
+						<li><a href="">Linkedin</a></li>
+						<li><a href="">Dribble</a></li>
+					</ul>
+				</div>
+				<div class="footer-items">
+					<div class="footer-items-go-top">
+						<img id="top" onclick="scrollToTop()" src="{% static 'images/Up-arrow.svg' %}" alt="" />
+					</div>
+					<span>© 2023 Incorp technologies. All rights reserved.</span>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+		<script>
+			window.sections = [...document.querySelectorAll('.section')];
+			window.lastScrollTop = window.pageYOffset;
+
+			document.body.style.background = window.sections[0].getAttribute('data-bg');
+
+			window.addEventListener('scroll', onScroll);
+
+			function onScroll() {
+				const scrollTop = window.pageYOffset;
+				
+				const section = window.sections
+					.map(section => {
+						const el = section;
+						const rect = el.getBoundingClientRect();
+						return {el, rect};
+					})
+					.find(section => section.rect.bottom >= (window.innerHeight * 0.5));
+				document.body.style.background = section.el.getAttribute('data-bg');
+			}
+		</script>
+		<script>
+			var scene = document.getElementById('parallax-container');
+			var parallaxInstance = new Parallax(scene);
+		</script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			 AOS.init();
+		</script>
+		<script src="scripts.js"></script>   <script>
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    </script>
+		<script>
+			// Скрипт для скрытия прелоудера после загрузки страницы
+			window.addEventListener('load', function () {
+					document.body.classList.add('loaded');
+			});
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				var menuItems = document.querySelectorAll('#menu_id li a');
+				var phoneImage = document.getElementById('phone-image');
+
+				menuItems.forEach(function (menuItem) {
+					menuItem.addEventListener('click', function (event) {
+						event.preventDefault();
+						var imageUrl = menuItem.getAttribute('data-image');
+						phoneImage.style.backgroundImage = 'url(' + imageUrl + ')';
+					});
+				});
+			});
+		</script>
+		<script>
+
+
+const scrollTargets = [
+  { buttonId: "go_one_section_id", targetId: "one_section_id" },
+  { buttonId: "go_nashi_uslugi", targetId: "nashi_uslugi" },
+  { buttonId: "go_portfolio", targetId: "portfolio" },
+  { buttonId: "go_section_grid_id", targetId: "section_grid_id" },
+  { buttonId: "go_contacts", targetId: "contacts" },
+  { buttonId: "go_to_portfolio", targetId: "portfolio" },
+  { buttonId: "go_to_contacts", targetId: "contacts" }
+];
+
+scrollTargets.forEach(target => {
+  const button = document.getElementById(target.buttonId);
+  const scrollTarget = document.getElementById(target.targetId);
+  if (button && scrollTarget) {
+    button.addEventListener("click", function (event) {
+      event.preventDefault(); // Предотвращаем действие по умолчанию
+      scrollTarget.scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  }
+});
+
+
+const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+
+mobileMenuLinks.forEach(link => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault(); // Предотвращаем действие по умолчанию (переход по ссылке)
+    
+    const targetId = link.getAttribute('id').replace('go_', ''); // Получаем идентификатор цели
+    const scrollTarget = document.getElementById(targetId); // Находим целевую секцию
+    
+    if (scrollTarget) {
+      scrollTarget.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+			</script>
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", function () {
+            if (this.checked) {
+                this.classList.add("checked");
+            } else {
+                this.classList.remove("checked");
+            }
+        });
+    });
+});
+
+			</script>
+	</body>
+</html>
