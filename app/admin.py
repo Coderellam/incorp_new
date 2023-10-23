@@ -9,17 +9,18 @@ from .models import Contact, Portfolio
 
 
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ('name', 'number', 'message')
-    list_filter = ('name',)
+    list_display = ('id', 'name', 'number', 'message', 'is_solved', 'created_at')
+    list_filter = ('is_solved',)
 
 
 admin.site.register(Contact, ContactAdmin)
 
 
 class PortfolioAdmin(admin.ModelAdmin):
-    list_display = ('image', 'preview')
-    # list_display = ('image', 'preview')
-    list_filter = ('image',)
+    list_display = ('id', 'image', 'preview', 'is_active', 'created_at')
+    list_filter = ('is_active',)
+
+    list_editable = ('is_active',)
 
     def preview(self, obj):
         html_code = f"""<img src={obj.image.url} alt="No image" width="80" height="60">"""
