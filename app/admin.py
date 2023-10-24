@@ -1,11 +1,18 @@
 from django.contrib import admin
 from django.utils.html import format_html
 
-from .models import Contact, Portfolio
+from .models import Contact, Portfolio, Phonenumber
 
 
 # admin.site.register(Contact)
 # admin.site.register(Portfolio)
+
+class PhonenumberAdmin(admin.ModelAdmin):
+    list_display = ('admin_name', 'phone_number')
+    list_filter = ('admin_name',)
+
+
+admin.site.register(Phonenumber, PhonenumberAdmin)
 
 
 class ContactAdmin(admin.ModelAdmin):

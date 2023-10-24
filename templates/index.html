@@ -31,10 +31,18 @@
                         <li><a id="go_contacts" href="#">Контакты</a></li>
                     </ul>
                 </div>
+
                 <div class="phone-number">
-                    <a href="tel:998-90-900-00-09">+998 90 900 00 09</a>
-                    <a href="tel:998-90-000-00-09">+998 90 000 00 09</a>
+                    {% for phone_number in phone_numbers %}
+                        <a href="tel:{{ phone_number.phone_number }}">{{ phone_number.phone_number }}</a>
+                    {% endfor %}
                 </div>
+
+                {#                <div class="phone-number">#}
+                {##}
+                {#                    <a href="tel:998-90-900-00-09">+998 90 900 00 09</a>#}
+                {#                    <a href="tel:998-90-000-00-09">+998 90 000 00 09</a>#}
+                {#                </div>#}
                 <!-- Меню бургера -->
                 <div class="burger-menu">
                     <div class="menu-icon">
@@ -398,7 +406,8 @@
                  data-aos-offset="200"
                  data-aos-delay="50"
                  data-aos-duration="700"
-                 data-aos-easing="ease-in-out" class="section-portfolio-00{{ forloop.counter }}" src="{{ portf.image.url }}" alt="">
+                 data-aos-easing="ease-in-out" class="section-portfolio-00{{ forloop.counter }}"
+                 src="{{ portf.image.url }}" alt="">
         {% endfor %}
         {#				<img data-aos="zoom-in"#}
         {#				data-aos-offset="200"#}

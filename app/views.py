@@ -1,13 +1,15 @@
 from django.shortcuts import render, redirect
-from .models import Contact, Portfolio
+from .models import Contact, Portfolio, Phonenumber
 import requests
 
 
 def index(request):
+    phone_numbers = Phonenumber.objects.all()
     portfs = Portfolio.objects.filter(is_active=True)
 
     d = {
-        'portfolios': portfs
+        'portfolios': portfs,
+        'phone_numbers': phone_numbers
     }
 
     if request.method == "POST":
@@ -30,4 +32,4 @@ def index(request):
         # result = requests.get(url)
         return redirect('/')
 
-    return render(request, "index.html", context=d)
+    return render(request, "index.html", context=d, )
