@@ -4,6 +4,18 @@ import requests
 
 
 def index(request):
+    data = request.GET
+    lang = data.get("lang")
+
+    # if lang is None:
+    #     lang = "en"
+    #
+    # if lang == "en":
+    #     return render(request, "en/index.html")
+    #
+    # elif lang == "ru":
+    #     return render(request, "ru/index.html")
+
     phone_numbers = Phonenumber.objects.all()
     portfs = Portfolio.objects.filter(is_active=True)
 
@@ -27,9 +39,9 @@ def index(request):
                                      mobile_development=service_mob)
 
         obj.save()
-        # url = f"https://api.telegram.org/bot6548466627:AAFhjI1BZNAbvsVAtUkOb1Ms_6tykRjHYxU/sendMessage?chat_id=594445343&text=you \
-        # have a notification from incorp website: {data['message']}"
-        # result = requests.get(url)
+        url = f"https://api.telegram.org/bot6548466627:AAFhjI1BZNAbvsVAtUkOb1Ms_6tykRjHYxU/sendMessage?chat_id=594445343&text=you \
+        have a notification from incorp website: {data['message']}"
+        result = requests.get(url)
         return redirect('/')
 
     return render(request, "index.html", context=d, )
