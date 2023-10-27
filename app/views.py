@@ -39,8 +39,7 @@ def index(request):
                                      mobile_development=service_mob)
 
         obj.save()
-        url = f"https://api.telegram.org/bot6548466627:AAFhjI1BZNAbvsVAtUkOb1Ms_6tykRjHYxU/sendMessage?chat_id=594445343&text=you \
-        have a notification from incorp website: {data['message']}"
+        url = f"https://api.telegram.org/bot6548466627:AAFhjI1BZNAbvsVAtUkOb1Ms_6tykRjHYxU/sendMessage?chat_id=594445343&text=you have a notification from incorp website: {data['message']}"
         result = requests.get(url)
         return redirect('/')
 
