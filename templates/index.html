@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="{% static 'style.css' %}"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
-    <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}/"/>
     <title>iNCORP</title>
 </head>
 <body>
@@ -121,7 +121,7 @@
             <div class="sub-menu-wrap">
                 <ul id="menu_id">
 
-                    <li><a href="#" data-image="image6.jpg">
+                    <li><a href="#" data-image="{% static 'image6.jpg' %}">
                         <div class="android-img"></div>
                         <div class="ios-img"></div>
                         <!-- <img src="images/Android.png" alt="">
@@ -129,14 +129,14 @@
                         Разработка мобильных приложений</a>
                     </li>
 
-                    <li><a href="#" data-image="image5.jpg">
+                    <li><a href="#" data-image="{% static 'image5.jpg' %}">
                         <div class="ii-img"></div>
                         <!-- <img src="images/ii.png" alt=""> -->
                         Интеграция ИИ</a>
                     </li>
 
                     <li>
-                        <a href="#" data-image="image1.jpg">
+                        <a href="#" data-image="{% static 'image1.jpg' %}">
                             <div class="trategy-img"></div>
                             <!-- <img src="images/trategy.png" alt=""> -->
                             Разработка ПО на заказ</a>
@@ -147,14 +147,14 @@
                     </li> -->
 
                     <li>
-                        <a href="#" data-image="image2.jpg">
+                        <a href="#" data-image="{% static 'image2.jpg' %}">
                             <div class="testing-img"></div>
                             <!-- <img src="images/testing.png" alt=""> -->
                             Веб разработка</a>
                     </li>
 
 
-                    <li class="ux-item"><a href="#" data-image="image4.jpg">
+                    <li class="ux-item"><a href="#" data-image="{% static 'image4.jpg' %}">
                         <div class="ux-img"></div>
                         <!-- <img src="images/ux.png" alt=""> -->
                         UX/UI-дизайн</a>
