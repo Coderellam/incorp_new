@@ -25,6 +25,9 @@ class Portfolio(models.Model):
     image = models.ImageField(upload_to='images/')
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    positioning = models.CharField(max_length=20,
+                                   choices=[('left_top', 'Left Top'), ('right_top', 'Right Top'), ('top', 'Top')],
+                                   blank=True, null=True)
 
     def __str__(self):
         return f'name: {self.name}'
@@ -33,4 +36,3 @@ class Portfolio(models.Model):
 class Phonenumber(models.Model):
     admin_name = models.CharField(max_length=50, blank=True, null=True)
     phone_number = models.CharField(max_length=20, blank=True, null=True)
-

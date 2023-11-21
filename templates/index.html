@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}/"/>
     <title>iNCORP</title>
+
 </head>
 <body>
 <div class="preloader">
@@ -406,7 +407,11 @@
                  data-aos-offset="200"
                  data-aos-delay="50"
                  data-aos-duration="700"
-                 data-aos-easing="ease-in-out" class="section-portfolio-00{{ forloop.counter }}"
+                 data-aos-easing="ease-in-out" class="section-portfolio-items"
+                 style="
+                    right: 5%;
+                    left: 5%;
+                    top: 5%;"
                  src="{{ portf.image.url }}" alt="">
         {% endfor %}
         {#				<img data-aos="zoom-in"#}
@@ -726,8 +731,23 @@
                     data-aos-duration="700"
                     data-aos-easing="ease-in-out"
             >
+                <link rel="stylesheet" href="<link rel=" stylesheet
+                " href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+                integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+                crossorigin="anonymous">"
+
+                {#                <h3 class="text-center mt-3 text-info">Django Captcha</h3>#}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert text-center mt-5 alert-{{ message.tags }}">
+                    {% endfor %}
+                {% endif %}
+                </div>
+
+
                 <form method="post">
                     {% csrf_token %}
+                    {{ form.captcha }}
                     <div class="first-section-form">
                         <div class="form-name">
                             <label for="name">Имя</label>
@@ -782,12 +802,18 @@
                         ></textarea>
                     </div>
 
-                    <div class="form-footer">
-                        <button type="submit">Отправить</button>
-                    </div>
-                </form>
+
+                    <form action=" " method="post" class="text-center" mt-5>
+                        {% csrf_token %}
+                        {{ form.captcha }}
+                        <input type="submit" value="Submit" class="btn btn-primary"
+
+                    </form>
+                    <button type="submit">Отправить</button>
             </div>
+            </form>
         </div>
+    </div>
     </div>
 </section>
 
