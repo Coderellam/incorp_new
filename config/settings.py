@@ -147,5 +147,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
-RECAPTCHA_PUBLIC_KEY = '6Lf6rxcpAAAAADnY3LpQGkKj6ZnrIVHnEAieuEok'
-RECAPTCHA_PRIVATE_KEY = '6Lf6rxcpAAAAAC8zZ3nmOS9APt7yURYF4A1h8aSP'
+RECAPTCHA_PUBLIC_KEY = 'MySecretKey'
+RECAPTCHA_PRIVATE_KEY = 'MySecretKey'

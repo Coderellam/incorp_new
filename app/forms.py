@@ -1,6 +1,6 @@
 from django import forms
-from captcha.fields import CaptchaField
+from django_recaptcha.fields import ReCaptchaField
 
 
-class MyForm(forms.Form):
-    captcha = CaptchaField()
+class FormWithCaptcha(forms.Form):
+    captcha = ReCaptchaField()
