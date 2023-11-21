@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)_jcz^@ak_%x48(%xia%kn8r5$$&%&&(ztinqfa&e$@d#)g1$!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'app',
-    'captcha'
+    'django_recaptcha'
 ]
 
 MIDDLEWARE = [
@@ -52,7 +52,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -148,3 +147,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
+RECAPTCHA_PUBLIC_KEY = '6Lf6rxcpAAAAADnY3LpQGkKj6ZnrIVHnEAieuEok'
+RECAPTCHA_PRIVATE_KEY = '6Lf6rxcpAAAAAC8zZ3nmOS9APt7yURYF4A1h8aSP'

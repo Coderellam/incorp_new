@@ -414,25 +414,25 @@
                     top: 5%;"
                  src="{{ portf.image.url }}" alt="">
         {% endfor %}
-        {#				<img data-aos="zoom-in"#}
-        {#				data-aos-offset="200"#}
-        {#				data-aos-delay="50"#}
-        {#				data-aos-duration="700"#}
-        {#				data-aos-easing="ease-in-out" class="section-portfolio-002" src="{% static 'images/002.jpg' %}" alt="">#}
+<!--        {#				<img data-aos="zoom-in"#}-->
+<!--        {#				data-aos-offset="200"#}-->
+<!--        {#				data-aos-delay="50"#}-->
+<!--        {#				data-aos-duration="700"#}-->
+<!--        {#				data-aos-easing="ease-in-out" class="section-portfolio-002" src="{% static 'images/002.jpg' %}" alt="">#}-->
         <div class="section-portfolio__btn">
             <button><a href="#">Портфолио</a></button>
         </div>
-        {#			<img data-aos="zoom-in"#}
-        {#			data-aos-offset="200"#}
-        {#			data-aos-delay="50"#}
-        {#			data-aos-duration="700"#}
-        {#			data-aos-easing="ease-in-out" class="section-portfolio-003" src="{% static 'images/003.jpg' %}" alt="">#}
-        {#				<img data-aos="zoom-in"#}
-        {#				data-aos-offset="200"#}
-        {#				data-aos-delay="50"#}
-        {#				data-aos-duration="700"#}
-        {#				data-aos-easing="ease-in-out" class="section-portfolio-004" src="{% static 'images/004.webp' %}" alt="">#}
-        {
+<!--        {#			<img data-aos="zoom-in"#}-->
+<!--        {#			data-aos-offset="200"#}-->
+<!--        {#			data-aos-delay="50"#}-->
+<!--        {#			data-aos-duration="700"#}-->
+<!--        {#			data-aos-easing="ease-in-out" class="section-portfolio-003" src="{% static 'images/003.jpg' %}" alt="">#}-->
+<!--        {#				<img data-aos="zoom-in"#}-->
+<!--        {#				data-aos-offset="200"#}-->
+<!--        {#				data-aos-delay="50"#}-->
+<!--        {#				data-aos-duration="700"#}-->
+<!--        {#				data-aos-easing="ease-in-out" class="section-portfolio-004" src="{% static 'images/004.webp' %}" alt="">#}-->
+
     </div>
 </section>
 
@@ -731,23 +731,11 @@
                     data-aos-duration="700"
                     data-aos-easing="ease-in-out"
             >
-                <link rel="stylesheet" href="<link rel=" stylesheet
-                " href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-                integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-                crossorigin="anonymous">"
 
-                {#                <h3 class="text-center mt-3 text-info">Django Captcha</h3>#}
-                {% if messages %}
-                    {% for message in messages %}
-                        <div class="alert text-center mt-5 alert-{{ message.tags }}">
-                    {% endfor %}
-                {% endif %}
-                </div>
 
 
                 <form method="post">
                     {% csrf_token %}
-                    {{ form.captcha }}
                     <div class="first-section-form">
                         <div class="form-name">
                             <label for="name">Имя</label>
@@ -802,13 +790,8 @@
                         ></textarea>
                     </div>
 
-
-                    <form action=" " method="post" class="text-center" mt-5>
-                        {% csrf_token %}
                         {{ form.captcha }}
-                        <input type="submit" value="Submit" class="btn btn-primary"
 
-                    </form>
                     <button type="submit">Отправить</button>
             </div>
             </form>
