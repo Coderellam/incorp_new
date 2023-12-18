@@ -10,7 +10,7 @@
     <title>iNCORP</title>
 
 </head>
-<body>
+<body>"
 <div class="preloader">
     <div class="spinner"></div>
 </div>
@@ -216,15 +216,10 @@
                     <li class="card" id="card1">
                         <div class="card-body">
                             <div class="one-section-right-item">
-                                <img src="{% static 'images/01item.svg' %}" alt=""/>
-                                <h2>Инновационные разработки для вашего успеха</h2>
+                                <img src="{{ inno_razrabotki1.image.url }}" alt=""/>
+                                <h2>{{ inno_razrabotki1.title }}</h2>
                                 <p>
-                                    Инновационные разработки для вашего успеха. Мы создаем
-                                    высококачественные мобильные приложения, веб-сайты и
-                                    программное обеспечение, которые помогут вашему бизнесу
-                                    преуспеть. Доверьтесь нашей команде экспертов и воплотите
-                                    свои идеи в реальность. Обретите цифровое превосходство и
-                                    достигните новых высот в вашей индустрии.
+                                    {{ inno_razrabotki1.content }}
                                 </p>
                             </div>
                         </div>
@@ -232,15 +227,10 @@
                     <li class="card" id="card2">
                         <div class="card-body">
                             <div class="one-section-right-item">
-                                <img src="{% static 'images/02item.svg' %}" alt=""/>
-                                <h2>Инновационные разработки для вашего успеха</h2>
+                                <img src="{{ inno_razrabotki2.image.url }}" alt=""/>
+                                <h2>{{ inno_razrabotki2.title }}</h2>
                                 <p>
-                                    Инновационные разработки для вашего успеха. Мы создаем
-                                    высококачественные мобильные приложения, веб-сайты и
-                                    программное обеспечение, которые помогут вашему бизнесу
-                                    преуспеть. Доверьтесь нашей команде экспертов и воплотите
-                                    свои идеи в реальность. Обретите цифровое превосходство и
-                                    достигните новых высот в вашей индустрии.
+                                    {{ inno_razrabotki2.content }}
                                 </p>
                             </div>
                         </div>
@@ -248,15 +238,10 @@
                     <li class="card" id="card3">
                         <div class="card-body">
                             <div class="one-section-right-item">
-                                <img src="{% static 'images/02item.svg' %}" alt=""/>
-                                <h2>Инновационные разработки для вашего успеха</h2>
+                                <img src="{{ inno_razrabotki3.image.url }}" alt=""/>
+                                <h2>{{ inno_razrabotki3.title }}</h2>
                                 <p>
-                                    Инновационные разработки для вашего успеха. Мы создаем
-                                    высококачественные мобильные приложения, веб-сайты и
-                                    программное обеспечение, которые помогут вашему бизнесу
-                                    преуспеть. Доверьтесь нашей команде экспертов и воплотите
-                                    свои идеи в реальность. Обретите цифровое превосходство и
-                                    достигните новых высот в вашей индустрии.
+                                    {{ inno_razrabotki3.content }}
                                 </p>
                             </div>
                         </div>
@@ -297,13 +282,11 @@
                 <div class="two-section-right-top">
                     <div class="two-section-right-top-text">
                         <div class="two-section-right-top-text-heading">
-                            <img src="{% static 'images/itemtwo1.svg' %}" alt=""/>
-                            <h3>Веб-разработка</h3>
+                            <img src="{{ web.image.url }}" alt=""/>
+                            <h3>{{ web.title }}</h3>
                         </div>
                         <p>
-                            Мы предлагаем комплексный подход к веб-разработке, включающий
-                            в себя анализ рынка и конкурентов, разработку эффективной
-                            информационной архитектуры и интеграцию мощных функций!
+                            {{ web.content }}
                         </p>
                         <div class="two-section-right-top-text__button">
                             <button>
@@ -337,13 +320,11 @@
                     <div class="two-section-right-bottom-wrap">
                         <div class="two-section-right-bottom-l">
                             <div class="two-section-right-bottom-l-heading">
-                                <img src="{% static 'images/sec2phone.png' %}" alt=""/>
-                                <h3>Мобильная разработка</h3>
+                                <img src="{{ mobile.image.url }}" alt=""/>
+                                <h3>{{ mobile.title }}</h3>
                             </div>
                             <p>
-                                Мы предлагаем полный спектр услуг по мобильной разработке,
-                                включая разработку приложений для iOS и Android, дизайн
-                                пользовательского интерфейса, тестированией!
+                                {{ mobile.content }}
                             </p>
                             <div class="two-section-right-bottom__button">
                                 <button>
@@ -364,14 +345,11 @@
                                 data-aos-easing="ease-in-out"
                         >
                             <div class="two-section-right-bottom-l-heading">
-                                <img src="{% static 'images/sec2pencil.png' %}" alt=""/>
-                                <h3>UX/UI-дизайн</h3>
+                                <img src="{{ uxui.image.url }}" alt=""/>
+                                <h3>{{ uxui.title }}</h3>
                             </div>
                             <p>
-                                Наша команда опытных дизайнеров UX/UI создаст для вас
-                                пользовательский опыт, который не только привлечет внимание
-                                вашей аудитории, но и обеспечит высокую конверсию и
-                                лояльность пользователей.
+                                {{ uxui.content }}
                             </p>
                             <div class="two-section-right-bottom__button">
                                 <button>
@@ -399,7 +377,7 @@
 <!-- <div style="height: 50vh;" class="section black-animation" data-bg="#000014"></div>
 <div style="height: 50vh;" class="section black-animation" data-bg="#f2f2f4"></div> -->
 
-
+"""
 <section id="portfolio" class="section-portfolio">
     <div class="section-portfolio-wrap">
         {% for portf in portfolios %}
@@ -407,31 +385,29 @@
                  data-aos-offset="200"
                  data-aos-delay="50"
                  data-aos-duration="700"
-                 data-aos-easing="ease-in-out" class="section-portfolio-items"
-                 style="
-                    right: 5%;
-                    left: 5%;
-                    top: 5%;"
+                 data-aos-easing="ease-in-out" class="section-portfolio-00{{ forloop.counter }}"
                  src="{{ portf.image.url }}" alt="">
+
         {% endfor %}
-<!--        {#				<img data-aos="zoom-in"#}-->
-<!--        {#				data-aos-offset="200"#}-->
-<!--        {#				data-aos-delay="50"#}-->
-<!--        {#				data-aos-duration="700"#}-->
-<!--        {#				data-aos-easing="ease-in-out" class="section-portfolio-002" src="{% static 'images/002.jpg' %}" alt="">#}-->
+        <!--        {#				<img data-aos="zoom-in"#}-->
+        <!--        {#				data-aos-offset="200"#}-->
+        <!--        {#				data-aos-delay="50"#}-->
+        <!--        {#				data-aos-duration="700"#}-->
+        <!--        {#				data-aos-easing="ease-in-out" class="section-portfolio-002" src="{% static 'images/002.jpg' %}" alt="">#}-->
         <div class="section-portfolio__btn">
             <button><a href="#">Портфолио</a></button>
         </div>
-<!--        {#			<img data-aos="zoom-in"#}-->
-<!--        {#			data-aos-offset="200"#}-->
-<!--        {#			data-aos-delay="50"#}-->
-<!--        {#			data-aos-duration="700"#}-->
-<!--        {#			data-aos-easing="ease-in-out" class="section-portfolio-003" src="{% static 'images/003.jpg' %}" alt="">#}-->
-<!--        {#				<img data-aos="zoom-in"#}-->
-<!--        {#				data-aos-offset="200"#}-->
-<!--        {#				data-aos-delay="50"#}-->
-<!--        {#				data-aos-duration="700"#}-->
-<!--        {#				data-aos-easing="ease-in-out" class="section-portfolio-004" src="{% static 'images/004.webp' %}" alt="">#}-->
+        """
+        <!--        {#			<img data-aos="zoom-in"#}-->
+        <!--        {#			data-aos-offset="200"#}-->
+        <!--        {#			data-aos-delay="50"#}-->
+        <!--        {#			data-aos-duration="700"#}-->
+        <!--        {#			data-aos-easing="ease-in-out" class="section-portfolio-003" src="{% static 'images/003.jpg' %}" alt="">#}-->
+        <!--        {#				<img data-aos="zoom-in"#}-->
+        <!--        {#				data-aos-offset="200"#}-->
+        <!--        {#				data-aos-delay="50"#}-->
+        <!--        {#				data-aos-duration="700"#}-->
+        <!--        {#				data-aos-easing="ease-in-out" class="section-portfolio-004" src="{% static 'images/004.webp' %}" alt="">#}-->
 
     </div>
 </section>
@@ -474,15 +450,12 @@
                 >
                     <div class="item-1-inner">
                         <div class="item-1-inner-heading">
-                            <h4>Экспертиза и опыт</h4>
-                            <img src="{% static 'images/inner-01.svg' %}" alt=""/>
+                            <h4>{{ expertiza473.title }}</h4>
+                            <img src="{{ expertiza473.image.url }}" alt=""/>
                         </div>
                         <div class="item-1-inner-body">
                             <p>
-                                Наша команда обладает широкой экспертизой и многолетним
-                                опытом в разработке IT-продуктов, что позволяет нам
-                                эффективно решать сложные задачи и достигать впечатляющих
-                                результатов.
+                                {{ expertiza473.content }}
                             </p>
                         </div>
                         <div class="item-1-inner-footer">
@@ -508,14 +481,12 @@
                 >
                     <div class="item-1-inner">
                         <div class="item-1-inner-heading">
-                            <h4>Инновационный подход</h4>
-                            <img src="{% static 'images/inner-02.svg' %}" alt=""/>
+                            <h4>{{ innopodxod.title }}</h4>
+                            <img src="{{ innopodxod.image.url }}" alt=""/>
                         </div>
                         <div class="item-1-inner-body">
                             <p>
-                                Постоянно следим за последними технологическими трендами и
-                                применяем инновационные решения, чтобы помочь вам оставаться
-                                впереди конкурентов и преуспевать в быстро меняющемся рынке.
+                                {{ innopodxod.content }}
                             </p>
                         </div>
                         <div class="item-1-inner-footer">
@@ -541,15 +512,12 @@
                 >
                     <div class="item-1-inner">
                         <div class="item-1-inner-heading">
-                            <h4>Экспертиза и опыт</h4>
-                            <img src="{% static 'images/inner-03.svg' %}" alt=""/>
+                            <h4>{{ expertiza.title }}</h4>
+                            <img src="{{ expertiza.image.url }}" alt=""/>
                         </div>
                         <div class="item-1-inner-body">
                             <p>
-                                Наша команда обладает широкой экспертизой и многолетним
-                                опытом в разработке IT-продуктов, что позволяет нам
-                                эффективно решать сложные задачи и достигать впечатляющих
-                                результатов.
+                                {{ expertiza.content }}
                             </p>
                         </div>
                         <div class="item-1-inner-footer">
@@ -575,15 +543,12 @@
                 >
                     <div class="item-1-inner">
                         <div class="item-1-inner-heading">
-                            <h4>Индивидуальное внимание</h4>
-                            <img src="{% static 'images/inner-04.svg' %}" alt=""/>
+                            <h4>{{ individual.title }}</h4>
+                            <img src="{{ individual.image.url }}" alt=""/>
                         </div>
                         <div class="item-1-inner-body">
                             <p>
-                                Ценим каждого клиента и придаем важность пониманию их
-                                уникальных потребностей. Наш индивидуальный подход позволяет
-                                нам разработать решения, точно соответствующие вашим
-                                требованиям и целям.
+                                {{ individual.content }}
                             </p>
                         </div>
                         <div class="item-1-inner-footer">
@@ -609,14 +574,12 @@
                 >
                     <div class="item-1-inner">
                         <div class="item-1-inner-heading">
-                            <h4>Техническая экспертиза и поддержка</h4>
-                            <img src="{% static 'images/inner-05.svg' %}" alt=""/>
+                            <h4>{{ technical.title }}</h4>
+                            <img src="{{ technical.image.url }}" alt=""/>
                         </div>
                         <div class="item-1-inner-body">
                             <p>
-                                Наша команда предлагает полный спектр технической поддержки,
-                                обеспечивая вам комфорт и уверенность в работе с нами. Мы
-                                всегда готовы помочь и решить любые возникающие вопросы.
+                                {{ technical.content }}
                             </p>
                         </div>
                         <div class="item-1-inner-footer">
@@ -642,15 +605,12 @@
                 >
                     <div class="item-1-inner">
                         <div class="item-1-inner-heading">
-                            <h4>Гибкость и прозрачность</h4>
-                            <img src="{% static 'images/inner-06.svg' %}" alt=""/>
+                            <h4>{{ gibkost.title }}</h4>
+                            <img src="{{ gibkost.image.url }}" alt=""/>
                         </div>
                         <div class="item-1-inner-body">
                             <p>
-                                Ценим ваше время и бизнес-потребности. Поэтому мы предлагаем
-                                гибкие условия сотрудничества и прозрачную коммуникацию,
-                                чтобы обеспечить максимальное удовлетворение и успешные
-                                результаты вашего проекта.
+                                {{ gibkost.content }}
                             </p>
                         </div>
                         <div class="item-1-inner-footer">
@@ -733,7 +693,6 @@
             >
 
 
-
                 <form method="post">
                     {% csrf_token %}
                     <div class="first-section-form">
@@ -780,23 +739,28 @@
                         </div>
                     </div>
 
+                    <div>
+                        <div class="form-message">
+                            <label for="message">Сообшение</label>
+                            <textarea
+                                    name="message"
+                                    id="message"
+                                    placeholder="Напишите ваше сообщение"
+                            ></textarea>
+                        </div>
 
-                    <div class="form-message">
-                        <label for="message">Сообшение</label>
-                        <textarea
-                                name="message"
-                                id="message"
-                                placeholder="Напишите ваше сообщение"
-                        ></textarea>
+                        {#                        {{ form.captcha }}#}
+
+
+                        <div class="form-footer">
+                            <button type="submit">Отправить</button>
+                        </div>
+
                     </div>
 
-                        {{ form.captcha }}
-
-                    <button type="submit">Отправить</button>
+                </form>
             </div>
-            </form>
         </div>
-    </div>
     </div>
 </section>
 
@@ -965,5 +929,6 @@
     });
 
 </script>
+"
 </body>
 </html>

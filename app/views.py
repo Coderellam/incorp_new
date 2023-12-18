@@ -1,18 +1,13 @@
 from django.shortcuts import render, redirect
-from .models import Contact, Portfolio, Phonenumber
+from .models import Contact, Portfolio, Phonenumber, Web, Mobile, Uxui, Expertiza, \
+    Individual, Innopodxod, Technical, Gibkost, Inno_razrabotki1, Inno_razrabotki2, Inno_razrabotki3, Expertiza473
+
 import requests
 from .forms import FormWithCaptcha
 
 
 def home(request):
     if request.method == "POST":
-        # form = MyForm(request.POST)
-        # if form.is_valid():
-        #     messages.success(request, "Success!")
-        # else:
-        #     messages.error(request, "Wrong Captcha!")
-        #
-        # form = MyForm()
         return render(request, 'index.html')
 
 
@@ -33,10 +28,37 @@ def index(request):
     portfs = Portfolio.objects.filter(is_active=True)
     form = FormWithCaptcha()
 
+    web = Web.objects.all().first()
+    mobile = Mobile.objects.all().first()
+    uxui = Uxui.objects.all().first()
+    expertiza = Expertiza.objects.all().first()
+    individual = Individual.objects.all().first()
+    innopodxod = Innopodxod.objects.all().first()
+    technical = Technical.objects.all().first()
+    gibkost = Gibkost.objects.all().first()
+    inno_razrabotki1 = Inno_razrabotki1.objects.all().first()
+    inno_razrabotki2 = Inno_razrabotki2.objects.all().first()
+    inno_razrabotki3 = Inno_razrabotki3.objects.all().first()
+    expertiza473 = Expertiza473.objects.all().first()
+
     d = {
         'portfolios': portfs,
         'phone_numbers': phone_numbers,
-        'form': form
+        'form': form,
+
+        'web': web,
+        'mobile': mobile,
+        'uxui': uxui,
+        'expertiza': expertiza,
+        'individual': individual,
+        'innopodxod': innopodxod,
+        'technical': technical,
+        'gibkost': gibkost,
+        'inno_razrabotki1': inno_razrabotki1,
+        'inno_razrabotki2': inno_razrabotki2,
+        'inno_razrabotki3': inno_razrabotki3,
+        'expertiza473': expertiza473
+
     }
 
     if request.method == "POST":
@@ -56,8 +78,8 @@ def index(request):
                                          mobile_development=service_mob)
 
             obj.save()
-            url = f"https://api.telegram.org/bot6548466627:AAFhjI1BZNAbvsVAtUkOb1Ms_6tykRjHYxU/sendMessage?chat_id=748076346&text=you have a notification from incorp website: {data['message']}"
+            url = f"https://api.telegram.org/bot6548466627:AAFhjI1BZNAbvsVAtUkOb1Ms_6tykRjHYxU/sendMessage?chat_id=594445343&text=you have a notification from incorp website: {data['message']}"
             result = requests.get(url)
         return redirect('/')
-    # 748076346 /  594445343
+
     return render(request, "index.html", context=d, )
